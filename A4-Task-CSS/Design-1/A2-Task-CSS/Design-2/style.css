@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+.heading {
+    font-size: 60px;
+    margin: 10px;
+    margin-left: 550px;
+    font-family: "Playfair Display", serif;
+}
+
+.glasses {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+    justify-content: space-evenly;
+}
+
+.glass {
+    height: 370px;
+    width: 300px;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-radius: 18px;
+    /* position: relative; */
+}
+
+.glass:hover {
+    border: 2px solid orangered;
+    box-shadow: inset 0px 0px 25px rgba(241, 104, 6, 0.3);
+}
+
+.glass .image img {
+    height: 200px;
+    width: 200px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+    object-fit: cover;
+}
+
+.glass .name {
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.glass .flavour {
+    font-size: 12px;
+}
+
+.glass .price {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.starter {
+    height: 300px;
+    width: 90%;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    justify-content: center;
+    margin-left: 65px;
+    padding: 20px;
+    gap: 45px;
+    /* box-sizing: border-box; */
+}
+
+.starter .pic img {
+    height: 250px;
+    width: 250px;
+}
+
+.content h4 {
+    color: rgb(243, 94, 25);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.glass .price {
+    color: rgb(243, 94, 25);
+}
+
+.content h5 {
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.cont .explore {
+    padding: 10px 17px;
+    border-radius: 25px;
+    color: rgb(243, 94, 25);
+    border: 2px solid rgb(243, 94, 25);
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+    margin: 25px 5px;
+}
+
+.content h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+/* base state */
+.content h4 {
+    transition: color 0.3s ease;
+}
+
+/* hover effect */
+.starter:hover {
+    border: 2px solid rgb(243, 94, 25);
+    box-sizing: border-box;
+    border-radius: 18px;
+    background-color: rgb(75, 47, 37);
+    box-shadow: inset 0px 0px 25px rgba(241, 104, 6, 0.3);
+}
+
+.starter:hover .content h4 {
+    color: rgb(246, 37, 5);
+}
+
+.under i {
+    margin-left: 720px;
+    font-size: 25px;
+    color: orangered;
+}
+
+.glass button{
+    padding: 5px 7px;
+    font-size: 11px;
+    background-color: orangered;
+    outline: none;
+    border: none;
+    border-radius: 13px;
+    /* position: absolute; */
+    margin-top: 10px;
+}
+
+.footer{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.footer .more{
+    display: flex;
+    gap: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+}
+
+.footer .follow{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .follow button{
+    border: 1px solid rgb(246, 37, 5);
+    background-color: black;
+    color: rgb(246, 37, 5);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.footer h4{
+    font-size: 12px;
+}
